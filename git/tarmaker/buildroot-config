@@ -98,3 +98,6 @@ BR2_LINUX_KERNEL_CUSTOM_GIT_VERSION=""
 
 # enable ssh
 BR2_PACKAGE_OPENSSH=y
+
+# enable perl for 'git submodule' commands
+BR2_PACKAGE_PERL=y
