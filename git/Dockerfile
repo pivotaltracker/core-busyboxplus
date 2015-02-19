@@ -1,5 +1,4 @@
 FROM            scratch
-MAINTAINER      Brian Clements <radial@brianclements.net>
 ADD             rootfs.tar /
 
 # Setup and source bashrc for tab-complete, shell coloring
@@ -9,7 +8,7 @@ ENV             ENV $HOME/.bashrc
 
 # Can't `git pull` unless we set these
 WORKDIR         /root
-RUN             git config --global user.email "radial@brianclements.net" &&\
-                git config --global user.name "radial"
+RUN             git config --global user.email "git@localhost" &&\
+                git config --global user.name "git"
 
 CMD             ["/bin/sh"]

@@ -29,4 +29,4 @@ cd $1
 
 docker rm -f builder-$1
 docker rmi tarmaker:$1
-docker build -t busyboxplus:$1 .
+docker build -t concourse/busyboxplus:$1 .
