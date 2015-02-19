@@ -37,7 +37,7 @@ WORKDIR         /tmp/builder/buildroot
 # Add config
 ADD             buildroot-config /tmp/builder/buildroot/.config
 
-# Reformat config and prep for make            
+# Reformat config and prep for make
 RUN             make oldconfig
 
 # Make
@@ -120,13 +120,6 @@ RUN             rm -f \
                     git-mailinfo \
                     git-mailsplit \
                     git-merge \
-                    git-merge-base \
-                    git-merge-file \
-                    git-merge-index \
-                    git-merge-ours \
-                    git-merge-recursive \
-                    git-merge-subtree \
-                    git-merge-tree \
                     git-mktag \
                     git-mktree \
                     git-mv \
@@ -198,7 +191,7 @@ RUN             rm -f \
                 ln -s ../libexec/git-core/git git &&\
                 ln -s ../libexec/git-core/git-shell git-shell &&\
                 ln -s ../libexec/git-core/git git-upload-archive &&\
-                ln -s ../libexec/git-core/git-upload-pack git-upload-pack 
+                ln -s ../libexec/git-core/git-upload-pack git-upload-pack
 
 WORKDIR         /tmp/rootfs/usr/libexec/git-core
 RUN             ln -s git git-merge
