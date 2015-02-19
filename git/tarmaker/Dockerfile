@@ -199,7 +199,13 @@ RUN             ln -s git git-merge
 WORKDIR         /tmp/rootfs/usr/share
 RUN             rm -rf \
                     gitweb \
-                    locale
+                    locale \
+                    perl
+
+WORKDIR         /tmp/rootfs/usr/lib
+RUN             rm -rf \
+                    perl \
+                    perl5
 
 WORKDIR         /tmp/rootfs
 RUN             tar -pcf ../rootfs.tar .
