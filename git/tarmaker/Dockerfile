@@ -135,7 +135,6 @@ RUN             rm -f \
                     git-prune-packed \
                     git-push \
                     git-read-tree \
-                    git-receive-pack \
                     git-reflog \
                     git-relink \
                     git-remote \
