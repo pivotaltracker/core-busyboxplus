@@ -1,5 +1,5 @@
 # Dockerfile for busybox+git using buildroot
-FROM            radial/distro:us-west-1
+FROM            ubuntu:14.04
 MAINTAINER      Brian Clements <radial@brianclements.net>
 
 # Install packages
