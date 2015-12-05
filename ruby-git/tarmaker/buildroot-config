@@ -93,12 +93,12 @@ BR2_TARGET_ROOTFS_TAR_OPTIONS=""
 
 
 #########   GIT   #########
-BR2_PACKAGE_GIT=y
+#BR2_PACKAGE_GIT=y
 # enable ssh
-BR2_PACKAGE_OPENSSH=y
+#BR2_PACKAGE_OPENSSH=y
 
 # enable perl for 'git submodule' commands
-BR2_PACKAGE_PERL=y
+#BR2_PACKAGE_PERL=y
 
 
 
